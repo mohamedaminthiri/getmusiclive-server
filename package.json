@@ -6,10 +6,10 @@
   "scripts": {
     "start": "node dist/server.bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack --config webpack.server.config.js",
-    "preinstall": "npm run webpack",
+    "build": "webpack --config webpack.server.config.js",
+    "preinstall": "npm run build",
     "postinstall": "npm start",
-    "build:serve": "npm run webpack && npm start"
+    "build:serve": "npm run build && npm start"
   },
   "repository": {
     "type": "git",
