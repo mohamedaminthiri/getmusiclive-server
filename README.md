@@ -1,3 +1,5 @@
+# getmusic.live (server)
+
 ## Setup
 1. Clone repo and `npm i`
   - This will automatically build and start the server
