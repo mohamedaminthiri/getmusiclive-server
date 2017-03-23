@@ -15,7 +15,7 @@ module.exports = {
   },
   entry: './server.js',
   output: {
-    path: 'dist',
+    path: resolve(__dirname, 'dist'),
     filename: 'server.bundle.js'
   },
   externals: nodeModules
