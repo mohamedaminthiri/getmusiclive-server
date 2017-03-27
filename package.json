@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Shinobi881/getmusiclive-server#readme",
   "dependencies": {
+    "axios": "^0.15.3",
     "express": "^4.15.2"
   },
   "devDependencies": {
