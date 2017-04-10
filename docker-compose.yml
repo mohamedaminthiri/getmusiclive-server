@@ -6,4 +6,15 @@ services:
     volumes: 
       - ./:/usr/src/app
     ports:
-      - 5005:5000
+      - 5005:80
+
+  getmusiclive-client:
+    build: ../getmusiclive-client
+    volumes: 
+      - ../getmusiclive-client:/usr/src/app
+    ports: 
+      - 5006:80
+    links:
+      - getmusiclive-server
+    depends_on:
+      - getmusiclive-server

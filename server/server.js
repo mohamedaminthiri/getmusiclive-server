@@ -4,7 +4,7 @@ import data from '../data/data.json';
 import { Observable } from 'rxjs';
 
 const app = express();
-const PORT = process.env.NODE_ENV || 5000;
+const PORT = process.env.NODE_ENV || 80;
 
 app.get('/', (req, res) => {
   res.send('hello');
@@ -62,5 +62,5 @@ app.get('/events', (req, res, next) => {
 
 
 app.listen(PORT, () => {
-  console.log(`Listening on port ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
