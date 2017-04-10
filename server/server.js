@@ -4,6 +4,8 @@ import data from '../data/data.json';
 import { Observable } from 'rxjs';
 
 const app = express();
+
+// Port must be 80 for docker-compose mapping
 const PORT = process.env.NODE_ENV || 80;
 
 app.get('/', (req, res) => {
