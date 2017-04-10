@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  getmusiclive-server:
+    build: ./
+    volumes: 
+      - ./:/usr/src/app
+    ports:
+      - 5005:80 # must map server port to 80
+
+  getmusiclive-client:
+    build: ../getmusiclive-client
+    volumes: 
+      - ../getmusiclive-client:/usr/src/app
+    ports: 
+      - 5006:5001
+    links:
+      - getmusiclive-server
+    depends_on:
+      - getmusiclive-server
