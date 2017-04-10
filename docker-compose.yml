@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  getmusiclive-server:
+    build: ./
+    volumes: 
+      - ./:/usr/src/app
+    ports:
+      - 5005:5000
